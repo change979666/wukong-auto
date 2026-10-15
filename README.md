@@ -1,5 +1,7 @@
 # wukong-auto（悟空邀请码自动抢激活工具）
 
+A Python/Playwright desktop automation project for monitoring the official DingTalk Wukong invitation page and assisting with invite-code activation, with configurable settings, logs, retries, and alerts.
+
 钉钉悟空 AI 工作平台内测资格采用**整点限量发放邀请码**的模式。本工具实现邀请码全流程自动化：**监测 → 抢码 → 校验 → 自动激活**，最大化提升抢码成功率。
 
 ## 核心能力
