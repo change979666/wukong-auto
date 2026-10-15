@@ -1,0 +1,49 @@
+# 配置示例（复制为 config.yaml 后按你的环境修改）
+# 注意：config.yaml 包含本机路径，已被 .gitignore 排除，不要提交真实配置
+web:
+  url: https://wukong.dingtalk.com/
+  browser_type: chromium        # chromium / firefox / webkit
+  headless: true
+  cookie_path: ./cookies.json    # 浏览器登录态 Cookie 保存路径（可改绝对路径）
+
+polling:
+  normal_interval: 1.0           # 常规轮询间隔（秒）
+  before_hour_minute: 2          # 整点前 N 分钟进入高频轮询
+  before_hour_interval: 80       # 高频轮询间隔（毫秒）
+  hour_interval: 30              # 整点轮询间隔（毫秒）
+  max_retry: 3
+
+client:
+  windows_path: C:\Path\To\悟空客户端.exe   # 悟空客户端可执行文件路径
+  macos_path: /Applications/悟空.app
+  launch_timeout: 10
+  page_load_wait: 2
+
+input:
+  input_box_img: ./img/input_box.png       # 邀请码输入框截图
+  submit_btn_img: ./img/submit_btn.png     # 提交按钮截图
+  success_img: ./img/success.png           # 激活成功截图
+  failed_img: ./img/failed.png             # 激活失败截图
+  confidence: 0.8
+  action_interval: 0.5
+  uia_enable: true
+  coord_enable: true
+  tab_count: 8
+  input_box_rel: null
+  submit_btn_rel: null
+  input_box_abs:
+  - 425
+  - 772
+  submit_btn_abs:
+  - 486
+  - 830
+
+alert:
+  enable: false
+  dingtalk_webhook: ''           # 钉钉机器人 Webhook（可选）
+  serverchan_key: ''             # Server酱 SendKey（可选）
+  trigger:
+    copy_success: true
+    activate_success: true
+    activate_failed: true
+    error: true

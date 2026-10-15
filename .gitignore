@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# 构建产物（PyInstaller 输出）
+build/
+dist/
+wukong-auto/_internal/
+
+# 个人配置与凭据（勿提交，参考 config.example.yaml）
+config.yaml
+config.yml
+cookies.json
+debug.log
+logs/
+
+# 系统
+.DS_Store
+Thumbs.db
